@@ -1,0 +1,22 @@
+{
+  "name": "uix",
+  "version": "1.0.0",
+  "description": "ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boriskaborisenko/ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boriskaborisenko/ui/issues"
+  },
+  "homepage": "https://github.com/boriskaborisenko/ui#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
