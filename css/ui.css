@@ -130,17 +130,17 @@ body {
     display: inline-block;
     vertical-align: top;
     width: calc(30% - 1px);
-    border-left: 1px solid #453164;
+    border-left: 1px solid transparent;
     height: 100%;
 }
 
 .inventory {
     height: auto;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid transparent;
     font-size: 0;
     text-align: right;
     position: relative;
-    background: #A9364A;
+    background: #229fff;
 }
 
 .inventory_item_block {
@@ -188,7 +188,7 @@ body {
 .hint {
     position: relative;
     height: calc(100% - 57px);
-    background: #eee;
+    background: rgba(255,255,255,0.7);
 }
 
 .hint_box {
@@ -205,6 +205,7 @@ body {
     width: 80%;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.77);
+    text-align: center;
 }
 
 .hint_header {
@@ -237,6 +238,19 @@ body {
     font-family: 'Arial';
     font-weight: bold;
     font-size: 22px;
+    color: #FFF;
+    text-decoration: none;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.action-button-mini {
+    position: relative;
+    padding: 14px 14px 12px 14px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 10px;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 14px;
     color: #FFF;
     text-decoration: none;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.5);
@@ -287,6 +301,14 @@ body {
 }
 
 .action-button:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.action-button-mini:active {
     transform: translate(0px, 5px);
     -webkit-transform: translate(0px, 5px);
     border-bottom: 2px solid rgba(0, 0, 0, 0.4);
